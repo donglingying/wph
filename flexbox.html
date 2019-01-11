@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	
+		<style>
+			/*1.把div1变成弹性盒子
+			   2.在弹性盒子里面的元素没有间隙
+			3. 弹性盒子中的元素好对齐
+			4.justify-content:flex-satart 居左
+			     center 居中
+			     flex-end 居右
+			     space-between 两端对齐
+			     space-around 平分剩余空间
+			5.垂直方向
+			   align-items:
+			       flex-start 居上
+			       center 居中
+			       flex-end 居下
+			       stertch （默认拉伸）*/
+			#div1{
+				display: flex;
+				justify-content:space-around ;
+			}
+			#div2{
+				display: flex;
+				justify-content: center;
+				border: 1px solid red;
+				height: 500px;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			 <span id="s1">依恋集团女装品牌特卖会</span>
+			 <span id="s2">剩三天</span>
+		</div>
+		<div id="div2">
+			<img src="img/15420731471304.jpg" />
+			<img src="img/15420731720693.jpg" />
+		</div>
+	</body>
+</html>
